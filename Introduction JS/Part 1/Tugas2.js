@@ -1,15 +1,15 @@
-const mtk = 90
-const bahasaIndonesia = 90
+const mtk = 100
+const bahasaIndonesia = 0
 const bahasaInggris = 80
 const ipa = 80
 
 const rataRata = (mtk+bahasaIndonesia+bahasaInggris+ipa)/4
 
 //validasi null
-if (mtk==null || bahasaIndonesia==null || bahasaInggris==null || ipa==null){
+if((!mtk&&mtk!=0) || (!bahasaIndonesia&&bahasaIndonesia!=0) || (!bahasaInggris&&bahasaInggris!=0) || (!ipa&&ipa!=0)){
     console.log("Masukkan semua nilai input!");
 }
-//validasi input number
+//validari input number
 else if (typeof(mtk)!='number'||typeof(bahasaIndonesia)!='number'||typeof(bahasaInggris)!='number'||typeof(ipa)!='number'){
     console.log("Masukkan input berupa number!");
 }
