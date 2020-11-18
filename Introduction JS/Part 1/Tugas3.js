@@ -1,7 +1,7 @@
 
 printSegitiga = (input) => {
     if (typeof(input) !== 'number'){
-        console.log('Masukkan input angka!')
+        console.log('Data harus number!')
     }
     let hasil = ""
     for (let x=input; x>0;x--){
