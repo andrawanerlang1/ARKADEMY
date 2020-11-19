@@ -1,7 +1,7 @@
-const mtk = 100
-const bahasaIndonesia = 0
-const bahasaInggris = 80
-const ipa = 80
+const mtk = 90
+const bahasaIndonesia = 89
+const bahasaInggris = 89
+const ipa = 89
 
 const rataRata = (mtk+bahasaIndonesia+bahasaInggris+ipa)/4
 
@@ -21,15 +21,15 @@ else if ((mtk>100||mtk<0)||(bahasaIndonesia>100||bahasaIndonesia<0)||(bahasaIngg
 else if(rataRata >= 90 && rataRata <= 100){
     console.log(`Rata-rata = ${rataRata}\nGrade = A`)
 }
-else if (rataRata >= 80 && rataRata <= 89){
+else if (rataRata >= 80 && rataRata < 90){
     console.log(`Rata-rata = ${rataRata}\nGrade = B`)
 }
-else if (rataRata >= 70 && rataRata <= 79){
+else if (rataRata >= 70 && rataRata < 80){
     console.log(`Rata-rata = ${rataRata}\nGrade = C`)
 }
-else if (rataRata >= 60 && rataRata <= 69){
+else if (rataRata >= 60 && rataRata < 70){
     console.log(`Rata-rata = ${rataRata}\nGrade = D`)
 }
-else if (rataRata >= 0 && rataRata <= 59){
+else if (rataRata >= 0 && rataRata < 60){
     console.log(`Rata-rata = ${rataRata}\nGrade = E`)
 }
